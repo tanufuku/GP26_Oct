@@ -24,10 +24,8 @@ public class Switch : MonoBehaviour
         Renderer r = GetComponent<Renderer>();
         if (r != null) r.material.color = pressedColor;
 
-        if (targetDoor != null)
-        {
-            targetDoor.Open();
-            UIManager.Instance.ShowMessage("Switch ON!  The door is opening...");
-        }
+        Door door = GetComponent<Door>();
+        door.Open();
+        UIManager.Instance.ShowMessage("Switch ON!  The door is opening...");
     }
 }

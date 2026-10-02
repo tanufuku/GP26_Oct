@@ -59,7 +59,7 @@ public class PlayerHealth : MonoBehaviour
 
         // 防御力ぶん軽減する。ただし最低1は減るようにして「まったく効かない」状態を作らない。
         int damage = Mathf.Max(1, amount - inventory.GetDefense());
-        CurrentHP = Mathf.Max(0, CurrentHP - damage);
+        CurrentHP = Mathf.Max(1, CurrentHP - damage);
         UIManager.Instance.UpdateHP(CurrentHP, maxHP);
         EffectLibrary.Play("PlayerHit", transform.position + Vector3.up * 1f);
         SoundLibrary.Play("PlayerHit");
@@ -175,6 +175,6 @@ public class PlayerHealth : MonoBehaviour
     {
         SetVisible(true);
         RestoreTint();
-        GameManager.Instance.OnPlayerDied();
+        GameManager.Instance.OnPlayerDead();
     }
 }

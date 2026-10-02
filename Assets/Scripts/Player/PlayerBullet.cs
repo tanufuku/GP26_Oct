@@ -28,7 +28,7 @@ public class PlayerBullet : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         // 敵に当たった：相手の TakeDamage を呼ぶ（敵側で HP 減少・火花・しゃがみモーションが起きる）
-        EnemyBase enemy = other.GetComponentInParent<EnemyBase>();
+        EnemyBase enemy = other.transform.parent.GetComponent<EnemyBase>();
         if (enemy != null)
         {
             enemy.TakeDamage(damage);

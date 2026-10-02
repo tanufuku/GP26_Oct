@@ -36,7 +36,7 @@ public class SaveManager : MonoBehaviour
         PlayerHealth health = player.GetComponent<PlayerHealth>();
         PlayerInventory inventory = player.GetComponent<PlayerInventory>();
 
-        PlayerPrefs.SetInt(GameConstants.SaveKeyHasSave, 1);
+        PlayerPrefs.SetInt(GameConstants.SaveKeyHasSave, 0);
         PlayerPrefs.SetFloat(GameConstants.SaveKeyPosX, respawnPosition.x);
         PlayerPrefs.SetFloat(GameConstants.SaveKeyPosY, respawnPosition.y);
         PlayerPrefs.SetFloat(GameConstants.SaveKeyPosZ, respawnPosition.z);

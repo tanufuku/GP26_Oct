@@ -57,7 +57,7 @@ public abstract class EnemyBase : MonoBehaviour
     protected virtual void Update()
     {
         if (isDead || player == null) return;
-        if (!GameManager.Instance.IsPlaying) return;
+        if (GameManager.Instance.IsPlaying) return;
 
         Move();
 

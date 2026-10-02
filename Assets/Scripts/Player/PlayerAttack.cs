@@ -53,7 +53,7 @@ public class PlayerAttack : MonoBehaviour
     /// </summary>
     public int CalcDamage(int baseAtk, int weaponAtk)
     {
-        return baseAtk + weaponAtk;
+        return baseAtk;
     }
 
     private void DoAttack()
