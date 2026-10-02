@@ -1,0 +1,106 @@
+# ==========================================================
+#  VantanGP26_10 .gitignore
+#  「GitHub に上げるもの／上げないもの」の切り分けはここで決まる。
+#  Asset Store 素材と Unity の自動生成物は入れない。詳しくは README.md を参照。
+# ==========================================================
+
+# ===== Unity が自動生成するもの（クローン後に Unity が作り直す）=====
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+
+# ===== IDE・エディタが作るファイル =====
+/.vs/
+/.vscode/
+/.idea/
+*.csproj
+*.unityproj
+*.sln
+*.slnx
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# ===== OS が作るファイル =====
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== ビルド成果物 =====
+*.apk
+*.aab
+*.unitypackage
+*.app
+*.exe
+crashlytics-build.properties
+
+# ===== Asset Store の素材（ライセンス上、再配布できない）=====
+# 各自が Asset Store（Package Manager > My Assets）からインポートする。
+# 手順: docs/アセット導入手順.md
+# Unity Technologies の素材（Particle Pack など）は Assets/UnityTechnologies/ に入る
+/Assets/UnityTechnologies/
+/Assets/UnityTechnologies.meta
+# First Person + Third Person | Character Controllers（Unity 公式 Starter Assets。キャラクターのモデル・モーション）
+/Assets/Starter Assets/
+/Assets/Starter Assets.meta
+# SimplePoly City - Low Poly Assets（VenCreations）
+/Assets/SimplePoly City - Low Poly Assets/
+/Assets/SimplePoly City - Low Poly Assets.meta
+# Low Poly Basic Items Pack - Household Items（Kabungus）
+/Assets/Kabungus/
+/Assets/Kabungus.meta
+# 他の Asset Store 素材を追加で入れる場合はこのフォルダに入れる（まとめて除外）
+/Assets/ThirdParty/
+/Assets/ThirdParty.meta
+
+# ===== 効果音・BGM（docs/アセット導入手順.md「効果音・BGM の一覧」）=====
+# 効果音ラボ・OpenTracks などのフリー素材は「再配布禁止」なので、音ファイルは Git に入れない（各自がダウンロードして置く）。
+# フォルダだけ残す（.gitkeep）。この除外は外さないこと（外して push すると素材の再配布になる）。
+/Assets/Resources/Sounds/*
+!/Assets/Resources/Sounds/.gitkeep
+
+# ===== 手作業で組み込んだ「素材を参照する Prefab」（docs/アセット導入手順.md の手順 3）=====
+# Asset Store 素材を参照するので Git には入れない。
+/Assets/Resources/Characters/
+/Assets/Resources/Characters.meta
+/Assets/Resources/Effects/
+/Assets/Resources/Effects.meta
+/Assets/Resources/Items/
+/Assets/Resources/Items.meta
+/Assets/Resources/Stage/
+/Assets/Resources/Stage.meta
+
+# ===== エディタ拡張（GP26 メニュー）はすべて講師専用。学生には配布しない =====
+# Unity の学習のため、セットアップ・素材の組み込み・片付けは学生が手作業で行う（docs/アセット導入手順.md）。
+# シーン再生成・素材の自動適用・仮の音の生成・状況確認などのツールは講師の PC にだけ存在する。
+/Assets/Editor/
+/Assets/Editor.meta
+
+# ===== 素材から自動生成されるもの（講師専用メニューが作る）=====
+# Asset Store 素材を参照する Prefab / AnimatorController が入る。素材と一緒に除外。
+/Assets/_Generated/
+/Assets/_Generated.meta
+
+# ===== パッケージのロックファイル（manifest.json の版指定から Unity が再生成する）=====
+/Packages/packages-lock.json
+
+# ===== 講師の作業環境だけで使うパッケージが作る設定。配布には不要 =====
+# Unity MCP（Assistant パッケージ）／Particle Pack が連れてくる ProGrids
+/ProjectSettings/Packages/com.unity.ai.assistant/
+/ProjectSettings/Packages/com.unity.progrids/
+
+# ===== 講師の作業用（配布しない）=====
+CLAUDE.md

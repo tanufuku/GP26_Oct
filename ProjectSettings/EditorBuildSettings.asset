@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Main.unity
+    guid: a8eb4e2c044cd7442ada7e499a8be01c
+  - enabled: 1
+    path: Assets/Scenes/Lessons/Lesson02_Method.unity
+    guid: 963647c0e9bac9242b9aeadc205cb8c6
+  - enabled: 1
+    path: Assets/Scenes/Lessons/Lesson03_ClassData.unity
+    guid: 5c1102d1d5e75a9428ca3e26fc6017cd
+  - enabled: 1
+    path: Assets/Scenes/Lessons/Lesson04_ClassMethod.unity
+    guid: 784d7c1f69c50ef4eb1c9e3e295815c8
+  - enabled: 1
+    path: Assets/Scenes/Lessons/Lesson05_Inheritance.unity
+    guid: cbb1e8217a4771548b42c5ef72843d6d
+  - enabled: 1
+    path: Assets/Scenes/Lessons/Lesson06_Practice.unity
+    guid: 59d0f5340337b564f91c12adad7deb9d
+  - enabled: 1
+    path: Assets/Scenes/Lessons/Lesson07_GetComponent.unity
+    guid: 82399cfce53787547a2dd326e6650aeb
+  - enabled: 1
+    path: Assets/Scenes/Lessons/Lesson08_Coroutine.unity
+    guid: 9185d35e96451ae44be48c1dc4e93d32
+  - enabled: 1
+    path: Assets/Scenes/Lessons/Lesson09_ScriptableObject.unity
+    guid: feafed6a0b430b24cadbe5e7d46a8964
+  - enabled: 1
+    path: Assets/Scenes/Lessons/Lesson10_SaveState.unity
+    guid: f0bc8ae832732e14ea8f1da6280e16f0
+  m_configObjects:
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  m_UseUCBPForAssetBundles: 0
